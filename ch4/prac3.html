@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>홍길동의 시간표</title>
+	<style type="text/css">
+		p {text-align: center; font-size: 24pt; font-family: "궁서체" "궁서" "Gungsuh" san-serif }
+		td { text-align: center }
+		td:hover { font-size: 20pt; color: #ff0000  }
+		#timetable { table-layout: fixed; width: 90% }
+		#flower { background-image: url(flower.jpg); text-align: center }
+		.blue { font-style: italic; background-color: #aaaaff }
+		.red { background-color: #ffaaaa }
+		.yellow { background-color: #00ffff }
+		.green { background-color: #00ff00 }
+	</style>
+</head>
+<body>
+	<p>홍길동의 시간표</p>
+	<table border="1" id="timetable" align="center">
+		<tr class="blue"><td>교시</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td></tr>
+		<tr><td class="blue">1</td><td></td><td></td><td rowspan="3" class="red">알고리즘</td><td></td><td rowspan="3" class="yellow">객체지향<br>프로그래밍</td></tr>
+		<tr><td class="blue">2</td><td></td><td rowspan="2" class="green">컴퓨터응용</td><td></td></tr>
+		<tr><td class="blue">3</td><td></td><td></td></tr>
+		<tr><td class="blue">4</td><td colspan="5" id ="flower">점심시간</td></tr>
+		<tr><td class="blue">5</td><td rowspan="2" class="red">알고리즘</td><td rowspan="3" class="yellow">객체지향<br>프로그래밍</td><td></td><td></td><td rowspan="2" class="green">컴퓨터응용</td></tr>
+		<tr><td class="blue">6</td><td></td><td></td></tr>
+		<tr><td class="blue">7</td><td></td><td></td><td></td><td></td></tr>
+		<tr><td class="blue">8</td><td></td><td></td><td></td><td></td><td></td></tr>
+	</table>
+</body>
+

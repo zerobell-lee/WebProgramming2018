@@ -1,0 +1,45 @@
+<!doctype HTMl>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>알람</title>
+	<style type="text/css">
+		#big { font-size: 30pt }
+	</style>
+</head>
+<body>
+<form method="get" action="form_app.js">
+<fieldset>
+<legend>알람 설정</legend>
+	<input type="time" id="big" value="06:00"/><br>
+	<label for="sun">일</label>
+	<input type="checkbox" name="day" value="sunday" id="sun">
+	<label for="mon">월</label>
+	<input type="checkbox" name="day" value="monday" id="mon" checked>
+	<label for="tue">화</label>
+	<input type="checkbox" name="day" value="tuesday" id="tue" checked>
+	<label for="wed">수</label>
+	<input type="checkbox" name="day" value="wednesday" id="wed" checked>
+	<label for="thu">목</label>
+	<input type="checkbox" name="day" value="thursday" id="thu" checked>
+	<label for="fri">금</label>
+	<input type="checkbox" name="day" value="friday" id="fri" checked>
+	<label for="sat">토</label>
+	<input type="checkbox" name="day" value="saturday" id="sat">
+	<br>
+	알람 사운드 :
+	<select name="sound" size="1">
+		<option value="bell" selected>Bell</option>
+		<option value="beep">Beep</option>
+		<option value="dingdong">Ding Dong</option>
+	</select>
+	<br>
+	음량 : 0
+	<input type="range" min="0" max="10" value="5">10
+</fieldset>
+<input type="submit" value="등록">
+<input type="reset" value="초기화">
+<input type="button" value="취소">
+</form>
+</body>
+</html>

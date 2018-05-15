@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HUFStaurant</title>
+</head>
+<body>
+<p><strong>레스토랑 예약하기</strong></p>
+<form method="post" action="form_app.js">
+<fieldset>
+	<legend>예약자 정보</legend>
+	<label for="guest_id">예약자 : </label>
+	<input type="text" name="id" size="20" id="guest_id"><br>
+	<label for="phone_num">휴대폰 : </label>
+	<input type="tel" placeholder="01*-000*-0000" pattern="01[0-9]-[0-9]{3,4}-[0-9]{4}" id="phone_num"/><br>
+	<label for="people">예약인원 : </label>
+	<select name="p_range" size="1"> 
+		<option value="2명" selected>2명</option>
+		<option value="3명">3명</option>
+		<option value="4명">4명</option>
+		<option value="5명">5명</option>
+		<option value="6명">6명</option>
+	</select>
+</fieldset>
+<fieldset>
+<legend>일자 선택 및 시간 선택</legend>
+	<input type="date">&nbsp;<input type="time" value="09:00" min="09:00" max="20:00"><br>
+	위치 : 
+	<label for="main">본관</label>
+	<input type="radio" name="location" id="main" value="main">
+	<label for="another">별관</label>
+	<input type="radio" name="location" id="another" value="another"><br>
+	<p>옵션 :
+		<input type="checkbox" name="option" value="singleroom">단독룸
+		<input type="checkbox" name="option" value="babychair">아기의자
+		<input type="checkbox" name="option" value="vegetarian">채식요리
+	</p>
+</fieldset>
+<input type="submit" value="예약"> &nbsp;
+<input type="reset" value="취소">
+</body>
+</html>

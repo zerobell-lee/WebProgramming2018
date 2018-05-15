@@ -1,0 +1,27 @@
+<!doctype HTMl>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>빨간 자동차</title>
+	<style type="text/css">
+		h1 { text-align: center }
+		#redbox { background-color: red; width: 300px; height: 150px; position:absolute; bottom: 90px; left: 5px}
+		#window0 { background-color : blue; width: 90px; height: 45px; position: absolute; bottom:185px; left:10px }
+		#window0:active { height:0px; transition: height 2s }
+		#window1 { background-color : white; width: 90px; height: 45px; position: absolute; bottom:185px; left:10px }
+
+		#tire { font-size: 30pt; border-radius: 50%; background-color: black; color: white; position:absolute; bottom: 70px; }
+		#tire:hover { transform: rotate(360deg); transition: transform 2s;}
+		.left { left:25px; }
+		.right { left: 225px }
+	</style>
+</head>
+<body>
+<h1>빨간 자동차</h1>
+<div id="redbox"></div>
+<div id="window1"></div>
+<div id="window0"></div>
+<div id="tire" class="left">&nbsp;ⓧ&nbsp;</div>
+<div id="tire" class="right">&nbsp;ⓧ&nbsp;</div>
+</body>
+</html>
